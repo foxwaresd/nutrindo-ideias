@@ -12,13 +12,18 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
   const router = useRouter()
   const pathname = usePathname()
 
+  const isLoginPage = pathname === '/admin/login'
+
   useEffect(() => {
+    if (isLoginPage) return
     if (!loading && (!user || !admin)) router.replace('/admin/login')
-  }, [user, admin, loading, router])
+  }, [user, admin, loading, router, isLoginPage])
 
   async function handleSignOut() {
     await signOut(getFirebaseAuth())
   }
+
+  if (isLoginPage) return <>{children}</>
 
   if (loading || !user || !admin) {
     return (
