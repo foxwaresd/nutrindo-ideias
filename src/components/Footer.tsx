@@ -52,6 +52,14 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+            <div className="mt-6 pt-5 border-t border-white/5">
+              <Link
+                href="/admin"
+                className="text-xs text-gray-700 hover:text-gray-500 transition-colors"
+              >
+                Acesso restrito
+              </Link>
+            </div>
           </div>
         </div>
 
