@@ -12,24 +12,22 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Nutrindo Ideias',
-    template: '%s | Nutrindo Ideias',
+    default: 'Ciências da Nutrição',
+    template: '%s | Ciências da Nutrição',
   },
-  description: 'Blog de nutrição por Evelyn Camargo. Dicas práticas, receitas saudáveis e conhecimento nutricional para uma vida mais equilibrada.',
-  keywords: ['nutrição', 'blog de nutrição', 'Evelyn Camargo', 'alimentação saudável', 'receitas saudáveis', 'nutricionista', 'saúde', 'bem-estar'],
-  authors: [{ name: 'Evelyn Camargo' }],
-  creator: 'Evelyn Camargo',
+  description: 'Blog sobre nutrição baseado em ciência. Dicas práticas e conhecimento nutricional para uma alimentação saudável e equilibrada.',
+  keywords: ['nutrição', 'ciências da nutrição', 'alimentação saudável', 'receitas saudáveis', 'nutricionista', 'saúde', 'bem-estar'],
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    siteName: 'Nutrindo Ideias',
-    title: 'Nutrindo Ideias — Nutrição por Evelyn Camargo',
-    description: 'Dicas práticas, receitas saudáveis e conhecimento nutricional por Evelyn Camargo.',
+    siteName: 'Ciências da Nutrição',
+    title: 'Ciências da Nutrição',
+    description: 'Blog sobre nutrição baseado em ciência. Dicas práticas e conhecimento nutricional para uma alimentação saudável.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Nutrindo Ideias — Nutrição por Evelyn Camargo',
-    description: 'Dicas práticas, receitas saudáveis e conhecimento nutricional por Evelyn Camargo.',
+    title: 'Ciências da Nutrição',
+    description: 'Blog sobre nutrição baseado em ciência. Dicas práticas e conhecimento nutricional para uma alimentação saudável.',
   },
   robots: {
     index: true,

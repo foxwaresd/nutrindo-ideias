@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: Props, _parent: ResolvingMeta
   const post = await getPostBySlug(slug)
   if (!post) return { title: 'Post não encontrado' }
   return {
-    title: `${post.title} — Nutrindo Ideias`,
+    title: `${post.title} — Ciências da Nutrição`,
     description: post.excerpt || post.title,
     openGraph: {
       title: post.title,

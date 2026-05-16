@@ -50,7 +50,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 22V13M12 13C12 9 9 6 5 6C5 10 8 13 12 13ZM12 13C12 9 15 6 19 6C19 10 16 13 12 13Z" />
                   </svg>
                 </div>
-                <span className="font-bold text-sm text-gray-900">Nutrindo Ideias</span>
+                <span className="font-bold text-sm text-gray-900">Ciências da Nutrição</span>
               </Link>
               <span className="text-gray-300 text-lg">/</span>
               <span className="text-sm font-semibold text-green-700 bg-green-50 px-2.5 py-0.5 rounded-lg">Admin</span>

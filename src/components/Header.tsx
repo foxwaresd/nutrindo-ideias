@@ -12,7 +12,7 @@ export default function Header() {
               </svg>
             </div>
             <span className="font-bold text-lg text-gray-900 tracking-tight">
-              Nutrindo <span className="text-green-600">Ideias</span>
+              Ciências da <span className="text-green-600">Nutrição</span>
             </span>
           </Link>
         </div>

@@ -22,9 +22,9 @@ export default function Sidebar({ topics, tags, activeTopic, activeTag }: Sideba
             <path strokeLinecap="round" strokeLinejoin="round" d="M12 22V13M12 13C12 9 9 6 5 6C5 10 8 13 12 13ZM12 13C12 9 15 6 19 6C19 10 16 13 12 13Z" />
           </svg>
         </div>
-        <h3 className="font-bold text-lg mb-1">Nutrindo Ideias</h3>
+        <h3 className="font-bold text-lg mb-1">Ciências da Nutrição</h3>
         <p className="text-green-100 text-sm leading-relaxed">
-          Blog de nutrição escrito pela nutricionista Evelyn Camargo. Dicas práticas, ciência e leveza para transformar sua relação com a alimentação.
+          Blog sobre nutrição baseado em ciência. Dicas práticas e conhecimento nutricional para uma alimentação saudável e equilibrada.
         </p>
       </div>
     </aside>

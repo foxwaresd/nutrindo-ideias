@@ -9,8 +9,8 @@ type Props = { params: Promise<{ tag: string }> }
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { tag } = await params
   return {
-    title: `#${tag} — Nutrindo Ideias`,
-    description: `Posts com a tag "${tag}" no Nutrindo Ideias.`,
+    title: `#${tag} — Ciências da Nutrição`,
+    description: `Posts com a tag "${tag}" no Ciências da Nutrição.`,
   }
 }
 

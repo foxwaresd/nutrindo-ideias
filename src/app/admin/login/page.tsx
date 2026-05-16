@@ -36,7 +36,7 @@ export default function AdminLoginPage() {
           </svg>
         </div>
         <h1 className="text-2xl font-bold text-gray-900 mb-1">Área Admin</h1>
-        <p className="text-gray-500 text-sm mb-8">Nutrindo Ideias — Evelyn Camargo</p>
+        <p className="text-gray-500 text-sm mb-8">Ciências da Nutrição</p>
 
         {user && !admin ? (
           <div className="bg-red-50 border border-red-200 rounded-xl p-4 text-sm text-red-700">

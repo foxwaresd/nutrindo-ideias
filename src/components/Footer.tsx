@@ -24,12 +24,11 @@ export default function Footer() {
                 </svg>
               </div>
               <span className="font-extrabold text-xl text-white tracking-tight">
-                Nutrindo <span className="text-green-500">Ideias</span>
+                Ciências da <span className="text-green-500">Nutrição</span>
               </span>
             </div>
             <p className="text-sm leading-relaxed text-gray-400 max-w-sm">
-              Blog de nutrição escrito pela nutricionista <span className="text-gray-200 font-medium">Evelyn Camargo</span>.
-              Ciência, praticidade e leveza para transformar sua relação com a alimentação.
+              Blog sobre nutrição baseado em ciência. Dicas práticas e conhecimento nutricional para uma alimentação saudável e equilibrada.
             </p>
             <p className="mt-4 text-xs text-gray-600 font-medium uppercase tracking-widest">
               Nutrição com propósito
@@ -65,14 +64,14 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-600">
-          <p>© {new Date().getFullYear()} Nutrindo Ideias — Evelyn Camargo. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} Ciências da Nutrição. Todos os direitos reservados.</p>
           <div className="flex items-center gap-1.5">
             <div className="w-4 h-4 rounded bg-green-600/20 flex items-center justify-center">
               <svg className="w-2.5 h-2.5 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 22V13M12 13C12 9 9 6 5 6C5 10 8 13 12 13ZM12 13C12 9 15 6 19 6C19 10 16 13 12 13Z" />
               </svg>
             </div>
-            <span>por Evelyn Camargo</span>
+            <span>cienciasdanutrição.com.br</span>
           </div>
         </div>
       </div>

@@ -6,8 +6,8 @@ import Sidebar from '@/components/Sidebar'
 import CurrentDateTime from '@/components/CurrentDateTime'
 
 export const metadata: Metadata = {
-  title: 'Nutrindo Ideias — Nutrição por Evelyn Camargo',
-  description: 'Blog de nutrição por Evelyn Camargo. Dicas práticas, receitas saudáveis e conhecimento nutricional para uma vida mais equilibrada.',
+  title: 'Ciências da Nutrição',
+  description: 'Blog sobre nutrição baseado em ciência. Dicas práticas e conhecimento nutricional para uma alimentação saudável e equilibrada.',
 }
 
 export const revalidate = 60
@@ -27,7 +27,7 @@ export default async function HomePage() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
       <section className="mb-12 text-center bg-gradient-to-br from-green-600 to-emerald-700 rounded-2xl py-16 px-8 shadow-sm">
         <h1 className="text-4xl sm:text-5xl font-extrabold text-white leading-tight mb-4">
-          Nutrindo <span className="text-green-200">Ideias</span>
+          Ciências da <span className="text-green-200">Nutrição</span>
         </h1>
         <p className="text-sm text-green-100 max-w-2xl mx-auto">
           <CurrentDateTime />
