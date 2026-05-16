@@ -9,7 +9,7 @@ interface Props {
 }
 
 export default function PostInteractions({ postId }: Props) {
-  const [stats, setStats] = useState<PostStats>({ viewCount: 0, likeCount: 0, ratingTotal: 0, ratingCount: 0 })
+  const [stats, setStats] = useState<PostStats>({ viewCount: 0, likeCount: 0, ratingTotal: 0, ratingCount: 0, shareCount: 0 })
   const [liked, setLiked] = useState(false)
   const [userRating, setUserRating] = useState(0)
   const [hoverRating, setHoverRating] = useState(0)
