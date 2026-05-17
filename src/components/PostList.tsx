@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import PostCard from './PostCard'
+import InFeedAd from './ads/InFeedAd'
 import type { Post } from '@/types'
 
 const PAGE_SIZE = 10
@@ -20,10 +21,20 @@ export default function PostList({ posts }: PostListProps) {
 
   return (
     <div>
-      <div className="bg-white rounded-2xl border border-gray-100 shadow-sm divide-y divide-gray-100">
-        {slice.map((post) => (
-          <PostCard key={post.id} post={post} />
-        ))}
+      <div className="space-y-2">
+        {Array.from({ length: Math.ceil(slice.length / 3) }, (_, gi) => {
+          const group = slice.slice(gi * 3, gi * 3 + 3)
+          return (
+            <div key={gi}>
+              <div className="bg-white rounded-2xl border border-gray-100 shadow-sm divide-y divide-gray-100">
+                {group.map((post) => (
+                  <PostCard key={post.id} post={post} />
+                ))}
+              </div>
+              {gi < Math.ceil(slice.length / 3) - 1 && <InFeedAd />}
+            </div>
+          )
+        })}
       </div>
 
       {totalPages > 1 && (
