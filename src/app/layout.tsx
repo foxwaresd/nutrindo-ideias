@@ -30,6 +30,9 @@ export const metadata: Metadata = {
     title: 'Ciências da Nutrição',
     description: 'Blog sobre nutrição baseado em ciência. Dicas práticas e conhecimento nutricional para uma alimentação saudável.',
   },
+  other: {
+    'google-adsense-account': 'ca-pub-3506193444513548',
+  },
   robots: {
     index: true,
     follow: true,
