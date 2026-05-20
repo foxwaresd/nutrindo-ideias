@@ -7,8 +7,6 @@ import { formatDate, slugify } from '@/lib/utils'
 import CopyLinkButton from '@/components/CopyLinkButton'
 import PostInteractions from '@/components/PostInteractions'
 import CommentsSection from '@/components/CommentsSection'
-import ArticleAd from '@/components/ads/ArticleAd'
-import StickyAds from '@/components/ads/StickyAds'
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -43,7 +41,6 @@ export default async function PostPage({ params }: Props) {
 
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-      <StickyAds />
       {/* Breadcrumb */}
       <nav className="flex items-center gap-2 text-sm text-gray-500 mb-8">
         <Link href="/" className="hover:text-green-600 transition-colors">Início</Link>
@@ -124,9 +121,6 @@ export default async function PostPage({ params }: Props) {
         className="prose prose-lg prose-green max-w-none prose-headings:font-extrabold prose-headings:text-gray-900 prose-p:text-gray-700 prose-p:leading-relaxed prose-a:text-green-600 prose-a:no-underline hover:prose-a:underline prose-blockquote:border-green-500 prose-blockquote:text-gray-600 prose-img:rounded-xl prose-img:shadow-sm"
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
-
-      {/* Anúncio no meio do artigo */}
-      <ArticleAd />
 
       {/* Tags — before comments */}
       {post.tags.length > 0 && (

@@ -1,7 +1,7 @@
 import type { Topic, Tag } from '@/types'
 import TopicList from './TopicList'
 import TagCloud from './TagCloud'
-import SidebarAd from './ads/SidebarAd'
+
 
 interface SidebarProps {
   topics: Topic[]
@@ -15,7 +15,6 @@ export default function Sidebar({ topics, tags, activeTopic, activeTag }: Sideba
     <aside className="space-y-6">
       <TopicList topics={topics} activeTopic={activeTopic} />
       <TagCloud tags={tags} activeTag={activeTag} />
-      <SidebarAd />
 
       {/* About widget */}
       <div className="bg-gradient-to-br from-green-600 to-emerald-700 rounded-2xl p-6 text-white">
